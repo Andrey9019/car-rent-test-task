@@ -1,0 +1,103 @@
+.about-container {
+  padding: 80px 16px;
+  margin-top: 80px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(18, 18, 20, 0.3) 0%,
+      rgba(18, 18, 20, 0.3) 100%
+    ),
+    url("/images/image-contact-us.webp");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 40px;
+  align-items: center;
+  gap: 32px;
+}
+.avatars-list {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+}
+
+.avatars-items-1 img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #d1baaa;
+  border: 1.5px solid var(--text-primary-cl);
+}
+
+.avatars-items img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #d1baaa;
+  border: 1.5px solid var(--text-primary-cl);
+}
+
+.avatar-online {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: green;
+  border: 1.5px solid var(--text-primary-cl);
+  bottom: 0px;
+  right: 0;
+  border-radius: 999px;
+}
+
+.about-text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.about-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.about-text p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-btn {
+  font-size: 16px;
+  font-weight: 600;
+  width: max-content;
+
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: var(--primary-cl);
+  color: var(--text-primary-cl);
+}
+
+.avatars-list li {
+  position: relative;
+  margin-left: -16px;
+}
+
+.avatars-list li:first-child {
+  margin-left: 0;
+}
+
+.avatar-container {
+  z-index: 3;
+  position: relative;
+}
+
+.avatars-list li:nth-child(2) .avatar-container {
+  z-index: 2;
+}
+
+.avatars-list li:nth-child(3) .avatar-container {
+  z-index: 1;
+}

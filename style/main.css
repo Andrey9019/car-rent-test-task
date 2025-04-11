@@ -1,0 +1,56 @@
+/* скидання стилів */
+@import url("reset.css");
+
+/* стилі для різних секцій */
+
+@import url("header.css");
+@import url("card.css");
+@import url("about.css");
+@import url("footer.css");
+@import url("common.css");
+
+:root {
+  --primary-cl: #b68867;
+  --secondary-cl: rgba(182, 136, 103, 0.2);
+
+  --text-primary-cl: #fefeff;
+  --txt-secondary-cl: #919192;
+
+  --bacground-cl: #121214;
+}
+
+html,
+body,
+#root {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  background: var(--bacground-cl);
+  color: var(--text-primary-cl);
+}
+
+button {
+  font-family: "Inter", sans-serif;
+}
+main {
+  flex-grow: 1;
+}
+
+.icon {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
