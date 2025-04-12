@@ -1,15 +1,32 @@
-.card {
+@media only screen and (min-width: 1440px) {
+  .main-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    /* gap: 24px; */
+    justify-content: space-between;
+  }
+}
+
+.car-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .car-image {
   width: 361px;
-
-  /* border-radius: 361px;
-  background: radial-gradient(
-    40% 40% at 50% 50%,
-    rgba(255, 255, 255, 0.35) 0%,
-    rgba(255, 255, 255, 0) 100%
-  ); */
-
   border-radius: 361px;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -18,9 +35,38 @@
   );
 }
 
+.booking-btn-container {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1440px) {
+  .booking-btn-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .car-image {
+    width: 344px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .car-image {
+    width: 460px;
+  }
+}
+
 .car-title {
   margin: 24px 0 8px;
   font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .car-title {
+    margin: 0 0 16px;
+    font-size: 24px;
+  }
 }
 
 .car-price {
@@ -28,10 +74,29 @@
   font-weight: 700;
   margin-bottom: 24px;
 }
+
+@media only screen and (min-width: 768px) {
+  .car-price {
+    margin-bottom: 32px;
+  }
+}
+
+.car-price-day {
+  font-weight: 100;
+  font-size: 16px;
+}
+
 .car-description-title {
   font-size: 18px;
   margin-bottom: 8px;
   letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .car-description-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
 
 .car-description-list {
@@ -40,6 +105,7 @@
   flex-direction: column;
   margin-bottom: 24px;
 }
+
 .car-description-item {
   font-size: 14px;
   letter-spacing: 1px;
@@ -66,10 +132,10 @@
 
 .booking-btn {
   font-size: 16px;
-
   max-width: 361px;
   display: block;
   width: 100%;
+  align-items: center;
   padding: 18px 24px;
   border-radius: 8px;
   background-color: var(--primary-cl);
@@ -81,9 +147,16 @@
 .hidden {
   display: none;
 }
+@media only screen and (min-width: 1440px) {
+  .hidden {
+    display: flex;
+  }
+}
+
 .extras-grid-container {
   padding: 32px 16px 0;
 }
+
 .extras-grid-container h2 {
   font-size: 20px;
   margin-bottom: 24px;
@@ -98,7 +171,7 @@
 
 .extra-btn {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   border: none;
   border-radius: 8px;
@@ -118,36 +191,72 @@
   flex-direction: column;
   align-items: start;
 }
+
+@media only screen and (min-width: 768px) {
+  .extra-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .extra-btn-svg-border {
+    padding-right: 8px;
+  }
+}
+
 .extra-btn-svg-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-end-end-radius: 8px;
+  border-start-end-radius: 8px;
+  background: #4f4f51;
 }
-.extra-btn-svg {
+
+.extra-btn-svg-container.active {
+  background: #c5a085;
 }
-.svg-add-del {
+
+.extra-btn-paragraf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
+@media only screen and (min-width: 768px) {
+  .extra-btn-paragraf {
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+  }
+}
+
 .extra-btn-title {
   font-size: 14px;
   margin: 8px 0 25px;
 }
+
+@media only screen and (min-width: 768px) {
+  .extra-btn-title {
+    font-size: 16px;
+    margin: 0px 0 25px;
+  }
+}
+
 .extra-btn-price {
   font-size: 16px;
 
   font-weight: 600;
 }
 
-/* кнопка оформлення */
-.booking-btn {
-  background-color: #b68867;
-  border: none;
-  border-radius: 10px;
-
-  color: white;
-  cursor: pointer;
-}
 /* хлібні крошки - степпер */
 
 .stepper-section {
   margin: 0 auto;
 }
+
 .stepper-container {
   background: #1e1e20;
   border-top: 1px solid #4f4f51;
@@ -163,6 +272,12 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .stepper-hidden {
+    display: none;
+  }
 }
 
 .step {
@@ -230,9 +345,11 @@
   font-size: 14px;
   color: var(--txt-secondary-cl);
 }
+
 .stepper-car-info p {
   font-size: 14px;
 }
+
 /* секція вибору страхування  */
 
 .insurance-container {
@@ -252,6 +369,13 @@
   margin-bottom: 32px;
 }
 
+@media only screen and (min-width: 768px) {
+  .insurance-options {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
 .insurance-card {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 16px;
@@ -264,6 +388,7 @@
 .insurance-card .description {
   margin-bottom: 16px;
 }
+
 .insurance-card .title {
   font-size: 16px;
   margin-bottom: 8px;
@@ -275,6 +400,7 @@
   align-items: center;
   margin-bottom: 16px;
 }
+
 .insurance-card .price {
   font-size: 24px;
   font-weight: 500;
@@ -300,7 +426,7 @@
 
 .insurance-btn {
   font-size: 16px;
-  width: 100%;
+  width: 210px;
   padding: 18px 24px;
   border-radius: 8px;
   background-color: var(--primary-cl);
@@ -308,16 +434,36 @@
 }
 
 /* секція  підтвердженн замовлення*/
+/* .confirm-main-container {
+  } */
 
 .confirm-container {
   padding: 32px 16px 0;
-  /* max-width: 500px; */
+  display: flex;
   margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .confirm-container .title {
   font-size: 20px;
   margin-bottom: 24px;
+}
+
+.orderForm {
+  max-width: 361px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .orderForm {
+    column-gap: 32px;
+
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .orderForm label {
@@ -326,9 +472,11 @@
 
   display: block;
 }
+
 .orderForm-text {
   font-size: 14px;
 }
+
 .orderForm input,
 select {
   width: 100%;
@@ -358,6 +506,7 @@ select {
   padding: 16px;
   margin-bottom: 24px;
   font-size: 12px;
+  height: max-content;
 }
 
 .summary-box .row {
@@ -380,6 +529,7 @@ select {
 .checkbox input {
   margin: 0;
 }
+
 .checkbox {
   display: flex;
   align-items: center;
@@ -388,10 +538,23 @@ select {
 .checkbox input {
   width: auto;
 }
+.container-pay-btn {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .container-pay-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+}
 
 .pay-later,
 .pay-now {
-  width: 100%;
+  /* width: 100%; */
+  min-width: 230px;
   padding: 18px 24px;
   border-radius: 8px;
   font-size: 16px;
@@ -399,10 +562,45 @@ select {
 }
 
 .pay-later {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   background: rgba(182, 136, 103, 0.2);
 }
 
 .pay-now {
   background: var(--primary-cl);
+}
+
+/*  */
+/* Сховати мінус за замовчуванням */
+.svg-minus {
+  display: none;
+}
+
+/* Коли кнопка активна — показати мінус і сховати плюс */
+.extra-btn.active .svg-plus {
+  display: none;
+}
+
+.extra-btn.active .svg-minus {
+  display: inline;
+}
+/* 1440 */
+@media only screen and (min-width: 1440px) {
+  .hero-card {
+    padding: 48px 24px;
+    background: #1e1e20;
+    max-width: 1280px;
+    border-radius: 16px;
+  }
+}
+
+.dekstop-stepper {
+  display: none;
+}
+@media only screen and (min-width: 1440px) {
+  .dekstop-stepper {
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 40px;
+  }
 }

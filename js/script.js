@@ -27,7 +27,14 @@ addOnInsuranceBtn.addEventListener("click", () => {
 // кнопка зміни стану в "add on extras"
 document.querySelectorAll(".extra-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
+    // Тогл на самій кнопці
     btn.classList.toggle("active");
+
+    // Знаходимо вкладений svg-контейнер
+    const svgContainer = btn.querySelector(".extra-btn-svg-container");
+    if (svgContainer) {
+      svgContainer.classList.toggle("active");
+    }
   });
 });
 

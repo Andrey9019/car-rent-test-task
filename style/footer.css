@@ -4,6 +4,12 @@
   padding: 40px 16px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 64px 32px 48px;
+  }
+}
+
 .subscribe-logo {
   margin-bottom: 24px;
 }
@@ -17,6 +23,14 @@
 
 .subscribe {
   margin-bottom: 56px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .subscribe-form-text {
@@ -52,9 +66,22 @@
   font-weight: 400;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-down-text {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .footer-down-list {
   display: flex;
   flex-direction: row;
   gap: 16px;
   margin-top: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-down-list {
+    margin-top: 0;
+  }
 }

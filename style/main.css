@@ -1,5 +1,6 @@
 /* скидання стилів */
 @import url("reset.css");
+@import url("common.css");
 
 /* стилі для різних секцій */
 
@@ -7,7 +8,6 @@
 @import url("card.css");
 @import url("about.css");
 @import url("footer.css");
-@import url("common.css");
 
 :root {
   --primary-cl: #b68867;
@@ -29,10 +29,7 @@ body,
 }
 
 body {
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
-
   background: var(--bacground-cl);
   color: var(--text-primary-cl);
 }
@@ -42,6 +39,8 @@ button {
 }
 main {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .icon {
