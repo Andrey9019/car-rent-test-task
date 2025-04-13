@@ -48,6 +48,26 @@ main {
   max-height: 16px;
 }
 
+.menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-info-card {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-plus-minus {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-icon {
+  width: 150px;
+  max-height: 18px;
+}
+
 /*  */
 /*  */
 /*  */

@@ -8,6 +8,7 @@
 }
 .header-menu-btn {
   height: 44px;
+  width: 44px;
   padding: 10px;
 }
 .header-contact {
@@ -26,5 +27,24 @@
     align-items: center;
     gap: 4px;
     color: #bdbdbe;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .nav-header {
+    display: flex;
+    gap: 84px;
+  }
+}
+
+.nav-list-header {
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .revers-hidden {
+    display: none;
   }
 }
