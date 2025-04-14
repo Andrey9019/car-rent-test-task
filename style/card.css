@@ -134,7 +134,7 @@
 
 .booking-btn {
   font-size: 16px;
-  max-width: 361px;
+  max-width: 210px;
   display: block;
   width: 100%;
   align-items: center;
@@ -142,6 +142,12 @@
   border-radius: 8px;
   background-color: var(--primary-cl);
   color: var(--text-primary-cl);
+}
+
+@media only screen and (min-width: 1440px) {
+  .booking-btn {
+    max-width: 361px;
+  }
 }
 
 /* стилі для секції add on extras */
@@ -275,10 +281,12 @@
   background: #1e1e20;
   border-top: 1px solid #4f4f51;
   padding-top: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .confirm-section .stepper-container {
-  background: transparent;
+  padding-bottom: 16px;
 }
 
 .stepper {
@@ -286,6 +294,13 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
+  width: 375px;
+}
+
+@media only screen and (min-width: 768px) {
+  .stepper {
+    width: 768px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -304,14 +319,38 @@
   font-weight: 300;
 }
 
-/* .line {
-  position: absolute;
+.line {
+  position: relative;
   top: 50%;
-  left: 110%;
+  display: block;
   width: 49px;
   height: 1px;
-  background: #b68867;
-} */
+  background-color: #4f4f51;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .line {
+    width: 96px;
+  }
+}
+
+.line.active {
+  background-color: #b68867;
+}
+
+.line.left {
+  margin-left: -51px;
+}
+.line.rights {
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .line.left {
+    margin-left: -97px;
+  }
+}
 
 .circle {
   position: relative;
@@ -439,20 +478,26 @@
 }
 
 .insurance-btn {
+  width: 100%;
+
   font-size: 16px;
-  width: 210px;
   padding: 18px 24px;
   border-radius: 8px;
   background-color: var(--primary-cl);
   color: var(--text-primary-cl);
 }
 
+@media only screen and (min-width: 768px) {
+  .insurance-btn {
+    width: 210px;
+  }
+}
 /* секція  підтвердженн замовлення*/
 /* .confirm-main-container {
   } */
 
 .confirm-container {
-  max-width: 472px;
+  /* max-width: 472px; */
   padding: 32px 16px 0;
   display: flex;
   margin: auto;
@@ -477,7 +522,7 @@
     max-width: max-content;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 514px;
+    /* max-width: 514px; */
   }
 }
 
@@ -589,6 +634,13 @@ select {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .pay-later,
+  .pay-now {
+    min-width: 100%;
+  }
+}
+
 .pay-later,
 .pay-now {
   min-width: 230px;
@@ -648,5 +700,6 @@ select {
     display: flex;
     margin-top: 64px;
     margin-bottom: 40px;
+    align-items: center;
   }
 }

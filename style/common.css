@@ -1,10 +1,10 @@
 .container {
   display: flex;
   flex-direction: column;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 40px 16px 0;
-
-  /* max-width: 1440px; */
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 768px) {
@@ -19,5 +19,7 @@
   }
 }
 .width-container {
-  max-width: 1440px;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
 }

@@ -25,8 +25,13 @@
             </ul>
         </div>
         <div class="header-wrapper">
-            <a class=" header-contact" href="tel:+1234567890">
-                <svg class="menu-icon " width="16" height="16">
+            <select class="header-select hidden">
+                <option>US</option>
+                <option>UK</option>
+                <option>UA</option>
+            </select>
+            <a class="header-contact" href="tel:+1234567890">
+                <svg class="menu-icon">
                     <use xlink:href="/images/sprite.svg#icon-phone"></use>
                 </svg>
                 +123 456 7890</a>
@@ -36,6 +41,10 @@
                     <use xlink:href="/images/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
+            <svg class="menu-icon hidden">
+                <use xlink:href="/images/sprite.svg#icon-log-in"></use>
+            </svg>
+
         </div>
     </header>
 
@@ -150,21 +159,31 @@
                         <ul class="stepper">
                             <li class="step active">
                                 <div class="circle">
-                                    <div class="line"></div>
+
+                                    <div class="line rights active"></div>
                                 </div>
                                 <span>Add on extras</span>
-
                             </li>
                             <li class="step">
-                                <div class="circle"></div>
+                                <div class="circle">
+                                    <div class="line left"></div>
+                                    <div class="line rights"></div>
+                                </div>
                                 <span>Insurance</span>
                             </li>
                             <li class="step">
-                                <div class="circle"></div>
+                                <div class="circle">
+                                    <div class="line rights"></div>
+                                    <div class="line left"></div>
+                                </div>
                                 <span>Confirm Order</span>
                             </li>
                             <li class="step">
-                                <div class="circle"></div>
+                                <div class="circle">
+                                    <div class="line left"></div>
+
+
+                                </div>
                                 <span>Payment</span>
                             </li>
                         </ul>
@@ -181,42 +200,40 @@
                     <div class="extras-grid-container">
                         <h2>Add on extras</h2>
                         <div class="extras-grid">
-                            <button class="extra-btn ">
-                                <div class="extra-btn-container">
-                                    <div class="extra-btn-svg-border">
+                            <button class="extra-btn">
+                                <span class="extra-btn-container">
+                                    <span class="extra-btn-svg-border">
                                         <svg class="icon-info-card">
                                             <use xlink:href="/images/sprite.svg#icon-infinity"></use>
                                         </svg>
-                                    </div>
-                                    <div class="extra-btn-paragraf">
-                                        <p class="extra-btn-title">Unlimited Mileage</p>
-                                        <p class="extra-btn-price">$15</p>
-                                    </div>
-                                </div>
-                                <div class="extra-btn-svg-container">
-
-                                    <svg class="svg-icon svg-plus icon-plus-minus ">
+                                    </span>
+                                    <span class="extra-btn-paragraf">
+                                        <span class="extra-btn-title">Unlimited Mileage</span>
+                                        <span class="extra-btn-price">$15</span>
+                                    </span>
+                                </span>
+                                <span class="extra-btn-svg-container">
+                                    <svg class="svg-icon svg-plus icon-plus-minus">
                                         <use xlink:href="/images/sprite.svg#icon-plus"></use>
                                     </svg>
-
-                                    <svg class="svg-icon svg-plus icon-plus-minus  svg-icon svg-minus active">
+                                    <svg class="svg-icon svg-plus icon-plus-minus svg-minus active">
                                         <use xlink:href="/images/sprite.svg#icon-minus"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </button>
                             <button class="extra-btn ">
-                                <div class="extra-btn-container">
-                                    <div class="extra-btn-svg-border">
+                                <span class="extra-btn-container">
+                                    <span class="extra-btn-svg-border">
                                         <svg class="icon-info-card">
                                             <use xlink:href="/images/sprite.svg#icon-globe"></use>
                                         </svg>
-                                    </div>
-                                    <div class="extra-btn-paragraf">
-                                        <p class="extra-btn-title">Cross-border Fee</p>
-                                        <p class="extra-btn-price">$15</p>
-                                    </div>
-                                </div>
-                                <div class="extra-btn-svg-container">
+                                    </span>
+                                    <span class="extra-btn-paragraf">
+                                        <span class="extra-btn-title">Cross-border Fee</span>
+                                        <span class="extra-btn-price">$15</span>
+                                    </span>
+                                </span>
+                                <span class="extra-btn-svg-container">
 
                                     <svg class="svg-icon svg-plus icon-plus-minus ">
                                         <use xlink:href="/images/sprite.svg#icon-plus"></use>
@@ -225,21 +242,21 @@
                                     <svg class="svg-icon svg-plus icon-plus-minus  svg-icon svg-minus active">
                                         <use xlink:href="/images/sprite.svg#icon-minus"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </button>
                             <button class="extra-btn ">
-                                <div class="extra-btn-container">
-                                    <div class="extra-btn-svg-border">
+                                <span class="extra-btn-container">
+                                    <span class="extra-btn-svg-border">
                                         <svg class="icon-info-card">
                                             <use xlink:href="/images/sprite.svg#icon-group"></use>
                                         </svg>
-                                    </div>
-                                    <div class="extra-btn-paragraf">
-                                        <p class="extra-btn-title">Full Tank Service</p>
-                                        <p class="extra-btn-price">$15</p>
-                                    </div>
-                                </div>
-                                <div class="extra-btn-svg-container">
+                                    </span>
+                                    <span class="extra-btn-paragraf">
+                                        <span class="extra-btn-title">Full Tank Service</span>
+                                        <span class="extra-btn-price">$15</span>
+                                    </span>
+                                </span>
+                                <span class="extra-btn-svg-container">
 
                                     <svg class="svg-icon svg-plus icon-plus-minus ">
                                         <use xlink:href="/images/sprite.svg#icon-plus"></use>
@@ -248,21 +265,21 @@
                                     <svg class="svg-icon svg-plus icon-plus-minus  svg-icon svg-minus active">
                                         <use xlink:href="/images/sprite.svg#icon-minus"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </button>
                             <button class="extra-btn ">
-                                <div class="extra-btn-container">
-                                    <div class="extra-btn-svg-border">
+                                <span class="extra-btn-container">
+                                    <span class="extra-btn-svg-border">
                                         <svg class="icon-info-card">
                                             <use xlink:href="/images/sprite.svg#icon-baby-seat"></use>
                                         </svg>
-                                    </div>
-                                    <div class="extra-btn-paragraf">
-                                        <p class="extra-btn-title">Child Seat</p>
-                                        <p class="extra-btn-price">$15</p>
-                                    </div>
-                                </div>
-                                <div class="extra-btn-svg-container">
+                                    </span>
+                                    <span class="extra-btn-paragraf">
+                                        <span class="extra-btn-title">Child Seat</span>
+                                        <span class="extra-btn-price">$15</span>
+                                    </span>
+                                </span>
+                                <span class="extra-btn-svg-container">
 
                                     <svg class="svg-icon svg-plus icon-plus-minus ">
                                         <use xlink:href="/images/sprite.svg#icon-plus"></use>
@@ -271,21 +288,21 @@
                                     <svg class="svg-icon svg-plus icon-plus-minus  svg-icon svg-minus active">
                                         <use xlink:href="/images/sprite.svg#icon-minus"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </button>
                             <button class="extra-btn ">
-                                <div class="extra-btn-container">
-                                    <div class="extra-btn-svg-border">
+                                <span class="extra-btn-container">
+                                    <span class="extra-btn-svg-border">
                                         <svg class="icon-info-card">
                                             <use xlink:href="/images/sprite.svg#icon-navigation"></use>
                                         </svg>
-                                    </div>
-                                    <div class="extra-btn-paragraf">
-                                        <p class="extra-btn-title">GPS Navigation System</p>
-                                        <p class="extra-btn-price">$15</p>
-                                    </div>
-                                </div>
-                                <div class="extra-btn-svg-container">
+                                    </span>
+                                    <span class="extra-btn-paragraf">
+                                        <span class="extra-btn-title">GPS Navigation System</span>
+                                        <span class="extra-btn-price">$15</span>
+                                    </span>
+                                </span>
+                                <span class="extra-btn-svg-container">
 
                                     <svg class="svg-icon svg-plus icon-plus-minus ">
                                         <use xlink:href="/images/sprite.svg#icon-plus"></use>
@@ -294,21 +311,21 @@
                                     <svg class="svg-icon svg-plus icon-plus-minus  svg-icon svg-minus active">
                                         <use xlink:href="/images/sprite.svg#icon-minus"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </button>
                             <button class="extra-btn ">
-                                <div class="extra-btn-container">
-                                    <div class="extra-btn-svg-border">
+                                <span class="extra-btn-container">
+                                    <span class="extra-btn-svg-border">
                                         <svg class="icon-info-card">
                                             <use xlink:href="/images/sprite.svg#icon-wifi"></use>
                                         </svg>
-                                    </div>
-                                    <div class="extra-btn-paragraf">
-                                        <p class="extra-btn-title">Wi-Fi Hotspot</p>
-                                        <p class="extra-btn-price">$15</p>
-                                    </div>
-                                </div>
-                                <div class="extra-btn-svg-container">
+                                    </span>
+                                    <span class="extra-btn-paragraf">
+                                        <span class="extra-btn-title">Wi-Fi Hotspot</span>
+                                        <span class="extra-btn-price">$15</span>
+                                    </span>
+                                </span>
+                                <span class="extra-btn-svg-container">
 
                                     <svg class="svg-icon svg-plus icon-plus-minus">
                                         <use xlink:href="/images/sprite.svg#icon-plus"></use>
@@ -317,21 +334,21 @@
                                     <svg class="svg-icon svg-plus icon-plus-minus svg-icon svg-minus active">
                                         <use xlink:href="/images/sprite.svg#icon-minus"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </button>
                             <button class="extra-btn ">
-                                <div class="extra-btn-container">
-                                    <div class="extra-btn-svg-border">
+                                <span class="extra-btn-container">
+                                    <span class="extra-btn-svg-border">
                                         <svg class="icon-info-card">
                                             <use xlink:href="/images/sprite.svg#icon-additional-driver"></use>
                                         </svg>
-                                    </div>
-                                    <div class="extra-btn-paragraf">
-                                        <p class="extra-btn-title">Additional Driver</p>
-                                        <p class="extra-btn-price">$15</p>
-                                    </div>
-                                </div>
-                                <div class="extra-btn-svg-container">
+                                    </span>
+                                    <span class="extra-btn-paragraf">
+                                        <span class="extra-btn-title">Additional Driver</span>
+                                        <span class="extra-btn-price">$15</span>
+                                    </span>
+                                </span>
+                                <span class="extra-btn-svg-container">
 
                                     <svg class="svg-icon svg-plus icon-plus-minus ">
                                         <use xlink:href="/images/sprite.svg#icon-plus"></use>
@@ -340,21 +357,21 @@
                                     <svg class="svg-icon svg-plus icon-plus-minus  svg-icon svg-minus active">
                                         <use xlink:href="/images/sprite.svg#icon-minus"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </button>
                             <button class="extra-btn ">
-                                <div class="extra-btn-container">
-                                    <div class="extra-btn-svg-border">
+                                <span class="extra-btn-container">
+                                    <span class="extra-btn-svg-border">
                                         <svg class="icon-info-card">
                                             <use xlink:href="/images/sprite.svg#icon-headphones"></use>
                                         </svg>
-                                    </div>
-                                    <div class="extra-btn-paragraf">
-                                        <p class="extra-btn-title">Roadside assistance waiver</p>
-                                        <p class="extra-btn-price">$15</p>
-                                    </div>
-                                </div>
-                                <div class="extra-btn-svg-container">
+                                    </span>
+                                    <span class="extra-btn-paragraf">
+                                        <span class="extra-btn-title">Roadside assistance waiver</span>
+                                        <span class="extra-btn-price">$15</span>
+                                    </span>
+                                </span>
+                                <span class="extra-btn-svg-container">
 
                                     <svg class="svg-icon svg-plus icon-plus-minus ">
                                         <use xlink:href="/images/sprite.svg#icon-plus"></use>
@@ -363,7 +380,7 @@
                                     <svg class="svg-icon svg-plus icon-plus-minus  svg-icon svg-minus active">
                                         <use xlink:href="/images/sprite.svg#icon-minus"></use>
                                     </svg>
-                                </div>
+                                </span>
                             </button>
 
                         </div>
@@ -380,20 +397,31 @@
                         <ul class="stepper">
                             <li class="step active">
                                 <div class="circle">
-                                    <div class="line"></div>
+
+                                    <div class="line rights active"></div>
                                 </div>
                                 <span>Add on extras</span>
                             </li>
                             <li class="step active">
-                                <div class="circle"></div>
+                                <div class="circle active">
+                                    <div class="line left active"></div>
+                                    <div class="line rights active"></div>
+                                </div>
                                 <span>Insurance</span>
                             </li>
                             <li class="step">
-                                <div class="circle"></div>
+                                <div class="circle">
+                                    <div class="line rights"></div>
+                                    <div class="line left"></div>
+                                </div>
                                 <span>Confirm Order</span>
                             </li>
                             <li class="step">
-                                <div class="circle"></div>
+                                <div class="circle">
+                                    <div class="line left"></div>
+
+
+                                </div>
                                 <span>Payment</span>
                             </li>
                         </ul>
@@ -508,26 +536,41 @@
 
             <section id="confirm-section" class="hidden confirm-section">
 
-                <ul class="stepper  stepper-hidden">
-                    <li class="step active">
-                        <div class="circle">
-                            <div class="line"></div>
-                        </div>
-                        <span>Add on extras</span>
-                    </li>
-                    <li class="step active">
-                        <div class="circle"></div>
-                        <span>Insurance</span>
-                    </li>
-                    <li class="step active">
-                        <div class="circle"></div>
-                        <span>Confirm Order</span>
-                    </li>
-                    <li class="step">
-                        <div class="circle"></div>
-                        <span>Payment</span>
-                    </li>
-                </ul>
+                <div class="stepper-container stepper-hidden">
+                    <ul class="stepper">
+                        <li class="step active">
+                            <div class="circle">
+
+                                <div class="line rights active"></div>
+                            </div>
+                            <span>Add on extras</span>
+                        </li>
+                        <li class="step active">
+                            <div class="circle active">
+                                <div class="line left active"></div>
+                                <div class="line rights active"></div>
+                            </div>
+                            <span>Insurance</span>
+                        </li>
+                        <li class="step active">
+                            <div class="circle">
+                                <div class="line rights active"></div>
+                                <div class="line left active"></div>
+                            </div>
+                            <span>Confirm Order</span>
+                        </li>
+                        <li class="step">
+                            <div class="circle">
+                                <div class="line left"></div>
+
+
+                            </div>
+                            <span>Payment</span>
+                        </li>
+                    </ul>
+
+
+                </div>
 
                 <div class="confirm-container">
 
@@ -535,7 +578,7 @@
                         <div>
                             <h2 class="title">Confirming Order</h2>
                             <label>
-                                <p class="orderForm-text">First Name <span class="required">*</span></p>
+                                <span class="orderForm-text">First Name <span class="required">*</span></span>
                                 <input type="text" placeholder="Enter Your First Name" required>
                             </label>
 
@@ -546,14 +589,14 @@
 
                             <label>
                                 Phone number <span class="required">*</span>
-                                <div class="phone-input">
+                                <span class="phone-input">
                                     <select>
                                         <option>US</option>
                                         <option>UK</option>
                                         <option>UA</option>
                                     </select>
                                     <input type="tel" placeholder="+1 (555) 000-0000" required>
-                                </div>
+                                </span>
                             </label>
 
                             <label>
@@ -598,7 +641,7 @@
             </section>
         </div>
 
-        </div>
+
 
 
         <!-- секція про нас -->
@@ -639,40 +682,42 @@
     </main>
     <!-- футер -->
     <footer class="footer">
-        <div class="subscribe">
+        <div class="footer-container">
+            <div class="subscribe">
 
-            <div>
-                <svg class="logo-icon subscribe-logo">
-                    <use xlink:href="/images/sprite.svg#icon-logo"></use>
-                </svg>
+                <div>
+                    <svg class="logo-icon subscribe-logo ">
+                        <use xlink:href="/images/sprite.svg#icon-logo"></use>
+                    </svg>
 
-                <p class="subscribe-text">Your Trusted Ride Awaits.</p>
-            </div>
-            <label class="subscribe-form">
-                <p class="subscribe-form-text">Stay up to date</p>
-                <input type="email" placeholder="Enter your email" class="subscribe-form-input" />
+                    <p class="subscribe-text">Your Trusted Ride Awaits.</p>
+                </div>
+                <label class="subscribe-form">
+                    <span class="subscribe-form-text">Stay up to date</span>
+                    <input type="email" placeholder="Enter your email" class="subscribe-form-input" />
+                </label>
                 <button class="subscribe-form-btn">Subscribe</button>
-            </label>
-        </div>
-        <div class="footer-down-text">
-            <p>© 2077 Untitled UI. All rights reserved.</p>
-            <nav>
-                <ul class="footer-down-list">
-                    <li>
-                        <a href="#">Terms</a>
+            </div>
+            <div class="footer-down-text">
+                <p>© 2077 Untitled UI. All rights reserved.</p>
+                <nav>
+                    <ul class="footer-down-list">
+                        <li>
+                            <a href="#">Terms</a>
 
-                    </li>
-                    <li>
-                        <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy</a>
 
-                    </li>
-                    <li>
-                        <a href="#">Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookies</a>
 
 
-                    </li>
-                </ul>
-            </nav>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </footer>
 </body>
