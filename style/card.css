@@ -283,6 +283,7 @@
   padding-top: 24px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .confirm-section .stepper-container {
