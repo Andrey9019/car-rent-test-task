@@ -10,12 +10,6 @@ Responsive layout of a car rental website. Implemented only HTML and CSS.
 - 📲 768px (tablets)
 - 💻 1440px (desktops)
 
-## 🔹 Components.
-
-- Auto info unit\*\* **Info block**.
-- Stepper-progress bar\*\*\*\*.
-- **Modern UI-structure** **Modern UI-structure**
-
 ## 🖼️ Preview
 
 **Mobile**  
