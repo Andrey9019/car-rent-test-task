@@ -555,6 +555,9 @@ select {
   margin-top: 6px;
 }
 
+.phone-input {
+  margin-top: 6px;
+}
 .phone-input input,
 select {
   border: none;
